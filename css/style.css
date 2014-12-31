@@ -1,0 +1,121 @@
+body html {
+	margin: 0px;
+	padding:0px;
+	
+}
+html{
+	background: #efefef;
+}
+ul,li{
+	list-style: none;
+	/*text-decoration: none;*/
+	margin: 0px;
+	padding:0px;
+}
+#top{
+	position: relative;
+	width: 900px;
+	height:100px;
+	margin: 0 auto;
+}
+#title{
+	position: relative;
+	color: #aaa;
+	font-size: 30px;
+	line-height: 100px;
+}
+#short-setting{
+	display: inline-block;
+	position: absolute;
+    margin-top: 15px;
+    margin-left: 80px;
+    /*background: #900;*/
+	width: 500px;
+	height: 75px;
+}
+#short-setting li{
+	background: url(../images/star01.png);
+	margin-left: 8px;
+	height: 75px;
+	width: 75px;
+	display: inline-block;
+}
+
+#short-setting li:hover{
+   /*background: url(../images/star00.png);*/
+   cursor: pointer;
+}
+.setting-selected{
+	background: url(../images/star00.png);
+}
+#content{
+	position: relative;
+	width: 900px;
+	height:400px;
+	margin: 0 auto;
+	
+	background: #2a2c2e;;
+}
+.menu{
+	width: 80px;
+	background: #121212;
+	height: 30px;
+	overflow: hidden;
+	text-align: center;
+	position: absolute;
+	right:0px;
+}
+.menu li{
+	cursor: default;
+	color: #eee;
+	border-top: 1px solid #711;
+	font-weight: bolder;
+	height:29px;
+	line-height: 29px;
+}
+.menu li a{
+	display: block;
+    font-size: 12px;
+    /*background: #900;*/
+	color: #aaa;
+	text-decoration: none;
+}
+.menu li a:hover{
+	color: #733;
+	background: #131313;
+}
+.game_list{
+	width: 200px;
+	height:200px;
+	background: #eee;
+	float: left;
+	margin-top: 80px;
+	margin-left: 70px;
+   border-radius: 20px;
+   border: 1px solid #333;
+   box-shadow: 2px 3px 1px #333;
+}
+.game_icon{
+	width: 100%;
+	height:160px;
+   
+}
+.game_icon img{
+	width: 100%;
+	height:200px;
+	border-radius: 20px;
+    
+}
+.game_name{
+	margin-top: -160px;
+    opacity: 0.3;
+	width: 100%;
+	height:40px;
+	line-height: 40px;
+	background: #789;
+	font-size: 28px;
+	color: #000;
+	border-top: 160px solid #fefefe;
+	text-align: center;
+	border-radius: 20px;
+}

@@ -1,0 +1,297 @@
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#efefef; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+	
+/* Structure */
+#wrapper {
+	width: 96%;	
+	max-width: 920px;
+	margin: auto;
+	padding: 2%;
+	} 
+
+#main {
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+    top:40px;
+	/*float: left;*/
+	background: #fee;
+	}		
+/* Logo H1 */
+header h1 {
+	height: 70px;
+	width: 160px;
+	float: left;
+	display: block;
+	background: url(../images/demo.gif) 0 0 no-repeat;
+	text-indent: -9999px;
+	}
+		
+/* Nav */
+header nav {
+	float: right;
+	margin-top: 40px; 
+	}
+	
+	header nav li {
+		display: inline;
+		margin-left: 15px;
+		}
+
+#skipTo {
+	display: none;
+	}
+	#skipTo li {
+		background: #b1fffc;
+		}
+
+.setting{
+	position: relative;
+	border-bottom: 20px solid #efefef;
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	background: #fff;
+}
+#main h3{
+	
+
+
+}
+#main p{
+	display: inline-block;
+	margin:10px 5px 2px 20px;
+	line-height: 30px;
+	font-size: 12px;
+}
+.game_name{
+    padding: 5px;
+	border-bottom: 1px solid #ffbbbb;
+	background: #fee;	
+}
+.game_name_right{
+    display: inline;
+    float: right;
+    cursor: default;
+}
+.game_name_right:hover{
+	color:#ab2222;
+}
+.setting_slider{
+	display: inline-block;
+	margin-right: 10px;
+	line-height: 30px;
+
+	width: 200px;
+	
+	
+}
+.setting_input{
+	width: 50px;
+}
+.save_button{
+    font-size: 13px;
+	color: #fff;
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	border-radius:4px;
+	border: 0px solid #fff;
+	width: 50px;
+	height: 30px;
+   background: #77b55a;
+   text-shadow: 0 1px 0 #5b8a3c;
+   font-family: arial;
+	display: block;
+}
+.setting_title{
+     
+	height:30px;
+	border-bottom:1px solid #bbbbbb;
+}
+.setting_title h3{
+	font-size: 20px;
+	width: 60%;
+	margin: 0 auto;
+	
+	
+	line-height: 30px;
+	border-bottom:1px solid #999;
+}
+.setting_title h3 a{
+	font-size: 20px;
+	color: #999;
+	text-transform: lowercase;
+	text-decoration: none;
+	margin-left: 20px;
+	display: inline-block;
+}
+.prompt{
+       	display: inline;
+		
+	}	
+
+#game2{
+	min-height: 360px;
+}
+.game2_setting{
+	height: 360px;
+	width: 100%;
+	/*background: #900;*/
+	position: absolute;
+	z-index: 0;
+}
+.game2_nav{
+	display: inline;
+	text-decoration: none;
+}
+.game2_nav li{
+	display: inline-block;
+	background: #ebb;
+	cursor: pointer;
+	padding:3px;
+	font-size: 8px;
+	border-radius: 2px;
+}
+#game2_config{
+	/*background: #fff;*/
+    
+    z-index: 1;
+}
+.config_bt{
+	/*background: #f99;*/
+}
+#game2_music_manage{
+    visibility: hidden;
+}
+#game2_bg_manage{
+    visibility: hidden;
+}
+
+.game2_manage{
+	/*float: left;*/
+	width: 100%;
+	height: 350px;
+   
+	/*background: #900;*/
+}
+
+#bg_manage{
+	width: 100%;
+}
+#music_manage{
+	/*border-right: 1px solid #faa;*/
+}
+.music_manage p{
+	margin-top: 5px !important;
+    margin-bottom: 2px !important;
+}
+.music_list{
+    
+	
+    width: 80%;
+    height: 150px;
+    margin:0 auto;
+    /*background: #700;*/
+}
+.music_list ul{
+
+	border: 1px solid #aaa;
+	padding: 10px;
+	height: 120px;
+	overflow: auto;
+}
+.music_list ul li{
+	margin-top: 5px;
+	border-bottom: 1px dashed #dcc;
+	padding-bottom: 1px;
+
+}
+.file_name{
+	display: inline;
+}
+.delete{
+	color: #f99;
+	background: #99b57a;
+	border-radius: 2px;
+	padding: 0 5px 0 5px;
+	text-shadow: 0 1px 0 #5b8a3c;
+	display: inline;
+	float: right;
+	cursor:pointer;
+}
+.delete:hover{
+	color: #e00;
+	background: #55994a;
+}
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+     
+      
+      .setting_slider{
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
+	  }
+	  .setting_title{
+	  	/*width: 0px;
+	  	height: 0px;*/
+	  	visibility: hidden;
+	  }
+	  
+		.setting_input{
+			width: 50px;
+			margin-left: -10px;
+		}
+}
+
+@media screen and (max-width: 615px) {
+
+	#skipTo {
+		display: block;
+		}
+	.save_button{
+		width: 95%;
+	}
+	
+	header nav, #main, aside {
+		float: left;
+		clear: left;
+		margin: 0 0 10px; 
+		width: 100%;
+		}	
+		header nav li {
+			margin: 0;
+			background: #ffbbbb;
+			display: block;
+			margin-bottom: 3px;
+			}
+			header nav a {
+				display: block;
+				padding: 10px;
+				text-align: center;
+				}			
+}
+@media screen and (max-width: 480px) {
+       .prompt{
+       	float: left;
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
+	}
+}

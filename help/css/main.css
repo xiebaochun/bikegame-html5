@@ -1,0 +1,166 @@
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#efefef; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}	
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+	
+/* Structure */
+#wrapper {
+	width: 96%;	
+	max-width: 920px;
+	margin: auto;
+	padding: 2%;
+	} 
+
+#main {
+	position: relative;
+	width: 60%;
+	margin: 0 auto;
+    top:40px;
+	/*float: left;*/
+	background: #fee;
+	}		
+/* Logo H1 */
+header h1 {
+	height: 70px;
+	width: 160px;
+	float: left;
+	display: block;
+	background: url(../images/demo.gif) 0 0 no-repeat;
+	text-indent: -9999px;
+	}
+		
+/* Nav */
+header nav {
+	float: right;
+	margin-top: 40px; 
+	}
+	
+	header nav li {
+		display: inline;
+		margin-left: 15px;
+		}
+
+#skipTo {
+	display: none;
+	}
+	#skipTo li {
+		background: #b1fffc;
+		}
+
+.setting{
+	position: relative;
+	border-bottom: 20px solid #efefef;
+	width: 100%;
+	height: 300px;
+	border-radius: 10px;
+	background: #fff;
+}
+
+#main p{
+	display: inline-block;
+	margin:10px 5px 2px 20px;
+	line-height: 30px;
+	font-size: 12px;
+}
+#require p{
+	margin-top: 15px;
+	line-height: 15px;
+}
+.game_name{
+    padding: 5px;
+	border-bottom: 1px solid #ffbbbb;
+	background: #fee;	
+}
+
+.setting_title{
+
+	height:30px;
+	border-bottom:1px solid #bbbbbb;
+}
+.setting_title h3{
+	font-size: 20px;
+	width: 60%;
+	margin: 0 auto;
+	
+	
+	line-height: 30px;
+	border-bottom:1px solid #999;
+}
+.setting_title h3 a{
+	font-size: 20px;
+	color: #999;
+	text-transform: lowercase;
+	text-decoration: none;
+	margin-right: 20px;
+	display: inline-block;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+     
+      
+      .setting_slider{
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
+	  }
+	  .setting_title{
+	  	/*width: 0px;
+	  	height: 0px;*/
+	  	visibility: hidden;
+	  }
+	  
+		.setting_input{
+			width: 50px;
+			margin-left: -10px;
+		}
+}
+
+@media screen and (max-width: 615px) {
+
+	#skipTo {
+		display: block;
+		}
+	.save_button{
+		width: 95%;
+	}
+	
+	header nav, #main, aside {
+		float: left;
+		clear: left;
+		margin: 0 0 10px; 
+		width: 100%;
+		}	
+		header nav li {
+			margin: 0;
+			background: #ffbbbb;
+			display: block;
+			margin-bottom: 3px;
+			}
+			header nav a {
+				display: block;
+				padding: 10px;
+				text-align: center;
+				}			
+}
+@media screen and (max-width: 480px) {
+       .prompt{
+       	float: left;
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
+	}
+}

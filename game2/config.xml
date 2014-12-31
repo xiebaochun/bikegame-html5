@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setting>	
+    <preferTime>1.6</preferTime>
+    
+    <playerValue>10</playerValue> 
+    
+    <reduceValue>10</reduceValue> 
+    
+    <reduceTime>1</reduceTime> 
+</setting>

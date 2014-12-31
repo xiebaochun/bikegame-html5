@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Masterson Technology Limited: HTML5 game demo</title>
+    
+    <meta content='user-scalable=0' charset="utf-8" name='viewport' />
+	<link href="assets/demoStyles.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="../css/jquery-ui.css">
+     <script src="js/jquery-1.10.2.min.js"></script>
+    
+	<!--  // <script src="assets/preloadjs-0.3.0.min.js"></script> -->
+
+	  <script type="text/javascript" src="assets/preloadjs-0.3.0.min.js"></script>
+	  <script type="text/javascript" src="assets/soundjs-0.4.0.min.js"></script>
+
+      <script type="text/javascript" src="js/easeljs/utils/UID.js"></script>
+	  <script type="text/javascript" src="js/easeljs/geom/Matrix2D.js"></script>
+	  <script type="text/javascript" src="js/easeljs/events/EventDispatcher.js"></script>
+	  <script type="text/javascript" src="js/easeljs/display/DisplayObject.js"></script>
+	  <script type="text/javascript" src="js/easeljs/display/Container.js"></script>
+	  <script type="text/javascript" src="js/easeljs/display/Stage.js"></script>
+	  <script type="text/javascript" src="js/easeljs/events/MouseEvent.js"></script>
+	  <script type="text/javascript" src="js/easeljs/display/Shape.js"></script>
+	  <script type="text/javascript" src="js/easeljs/display/Graphics.js"></script>
+	  <script type="text/javascript" src="js/easeljs/utils/Ticker.js"></script>
+	  <script type="text/javascript" src="js/easeljs/display/SpriteSheet.js"></script>
+	  <script type="text/javascript" src="js/easeljs/display/Bitmap.js"></script>
+	  <script type="text/javascript" src="js/easeljs/display/BitmapAnimation.js"></script>
+	  <script type="text/javascript" src="js/easeljs/geom/Rectangle.js"></script>
+	  <script type="text/javascript" src="js/easeljs/display/Text.js"></script>
+    
+	<!-- We also provide hosted minified versions of all CreateJS libraries.
+	  http://code.createjs.com -->
+	    <!-- <script type="text/javascript" src="js/createjs-2013.09.25.min.js"></script>
+	     <script type="text/javascript" src="js/createjs-2013.02.12.min.js"></script> -->
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="../js/update.js"></script>
+	<script type="text/javascript" src="js/obstacles.js"></script>
+	<script src="../js/jquery.fullscreen.js"></script>
+	
+	
+	<script src="../js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/mygame.js"></script>
+	
+</head>
+<body onload="init();">
+
+	<div id="loader"></div>
+	<div id="top">
+            <div id="title">
+                The Bike Game(1)
+            </div>
+    </div>
+	<div class="viewWraper" id="viewWraper">
+	    <div class="canvasHolder" id="playView">
+		   <canvas id="gameCanves" width="1024" height="614"></canvas>
+		   <div class="home_bt" id="start_button">Start</div>
+		   <div class="home_bt" id="desc_button">Desc</div>
+		   <div class="home_bt" id="back_button">Quit</div>
+		   <div id="progressbar"></div>		  
+	    </div>	
+        <div class="description" id="description">
+        	<div class="back_button" id="back_bt_desc"></div>
+        </div>
+	</div>
+</body>
+</html>
